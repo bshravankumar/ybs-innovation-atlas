@@ -23,7 +23,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link to="/" aria-label="YBS Industries home">
-          <Logo className="h-10 w-24" />
+          <Logo className="h-9" />
         </Link>
         <nav className="hidden items-center gap-6 text-sm lg:flex">
           <Link to="/" className="hover:text-signal">Home</Link>
