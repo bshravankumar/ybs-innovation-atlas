@@ -19,7 +19,7 @@ const TOPICS = [
 ];
 
 export const Route = createFileRoute("/contact")({
-  validateSearch: (s: Record<string, unknown>): { topic?: string } => (typeof s.topic === "string" ? { topic: s.topic } : {}),
+  validateSearch: (s: Record<string, unknown>): { topic?: string } => (typeof s["topic"] === "string" ? { topic: s["topic"] as string } : {}),
   head: () => ({
     meta: [
       { title: "Contact YBS Industries LLP — Discuss a Project" },

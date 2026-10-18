@@ -42,7 +42,7 @@ function Block({ label, children }: { label: string; children: React.ReactNode }
 function Detail() {
   const { initiative: i } = Route.useLoaderData();
   const idx = INITIATIVES.findIndex((x) => x.slug === i.slug);
-  const next = INITIATIVES[(idx + 1) % INITIATIVES.length];
+  const next = INITIATIVES[(idx + 1) % INITIATIVES.length]!;
   return (
     <>
       <section className="grid-paper border-b">
