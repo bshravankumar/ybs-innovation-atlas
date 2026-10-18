@@ -14,15 +14,7 @@ const NAV = [
 ];
 
 export function Logo({ className }: { className?: string }) {
-  return (
-    <span className={cn("block overflow-hidden", className)}>
-      <img
-        src={logo.url}
-        alt="YBS Industries"
-        className="h-full w-auto scale-[1.9] mix-blend-multiply"
-      />
-    </span>
-  );
+  return <img src={logo.url} alt="YBS Industries" className={cn("w-auto", className)} />;
 }
 
 export function SiteHeader() {
