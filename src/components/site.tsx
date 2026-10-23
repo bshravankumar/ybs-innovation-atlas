@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/ybs_logo.png.asset.json";
+import logo from "@/assets/ybs_logo.png";
 import { EMAILS, LINKEDIN, WEBSITE, type Maturity } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +14,7 @@ const NAV = [
 ];
 
 export function Logo({ className }: { className?: string }) {
-  return <img src={logo.url} alt="YBS Industries" className={cn("w-auto", className)} />;
+  return <img src={logo} alt="YBS Industries" className={cn("w-auto", className)} />;
 }
 
 export function SiteHeader() {
